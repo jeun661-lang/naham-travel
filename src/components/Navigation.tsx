@@ -20,23 +20,43 @@ export default function Navigation() {
   const navigateTo = (target: string) => {
     setIsMobileMenuOpen(false);
 
-    // If it's a route (starts with /), navigate to that page
     if (target.startsWith('/')) {
       router.push(target);
       return;
     }
 
-    // If on home page, scroll to section
+    if (target === 'hero' && pathname !== '/') {
+      router.push('/');
+      return;
+    }
+
     if (pathname === '/') {
       const el = document.getElementById(target);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // If on another page, go home then scroll
-      router.push(`/#${target}`);
+      // Store scroll target, navigate home, then scroll after load
+      sessionStorage.setItem('scrollTo', target);
+      router.push('/');
     }
   };
+
+  // After navigating home, scroll to stored target
+  useEffect(() => {
+    if (pathname === '/') {
+      const target = sessionStorage.getItem('scrollTo');
+      if (target) {
+        sessionStorage.removeItem('scrollTo');
+        setTimeout(() => {
+          const el = document.getElementById(target);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      }
+    }
+  }, [pathname]);
 
   const menuItems = [
     { label: '홈', target: 'hero' },

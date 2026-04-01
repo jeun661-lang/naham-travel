@@ -72,12 +72,11 @@ export default function AboutPage() {
     return () => observer.disconnect();
   }, []);
 
-  const scrollTo = (id: string) => {
-    if (id.startsWith('/')) {
-      window.location.href = id;
-      return;
+  const navigateHome = (section?: string) => {
+    if (section) {
+      sessionStorage.setItem('scrollTo', section);
     }
-    window.location.href = `/#${id}`;
+    window.location.href = '/';
   };
 
   return (
@@ -171,7 +170,7 @@ export default function AboutPage() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-3 gap-8">
               {stats.map((stat, index) => (
                 <div
                   key={index}
@@ -244,13 +243,13 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
-                onClick={() => scrollTo('products')}
+                onClick={() => navigateHome('products')}
                 className="bg-gold hover:bg-gold-light text-brown-dark px-8 py-4 rounded-sm text-base font-semibold transition-all hover:shadow-lg hover:shadow-gold/20 w-full sm:w-auto cursor-pointer"
               >
                 순례 일정 보기
               </button>
               <button
-                onClick={() => scrollTo('contact')}
+                onClick={() => navigateHome('contact')}
                 className="border border-cream/30 hover:border-gold text-cream hover:text-gold px-8 py-4 rounded-sm text-base font-medium transition-all w-full sm:w-auto cursor-pointer"
               >
                 상담 신청
