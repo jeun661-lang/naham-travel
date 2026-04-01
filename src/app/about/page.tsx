@@ -14,7 +14,6 @@ const stats: StatItem[] = [
   { number: 100, suffix: '회+', label: '성지순례 인솔' },
   { number: 20, suffix: '년+', label: '성지순례 경력' },
   { number: 15, suffix: '개국+', label: '순례 인솔' },
-  { number: 10000, suffix: '명+', label: '함께한 순례자' },
 ];
 
 const timeline = [
@@ -101,7 +100,7 @@ export default function AboutPage() {
 
             {/* Name */}
             <h1 className="font-serif text-4xl sm:text-5xl text-cream font-bold mb-3">
-              OOO <span className="text-gold">목사</span>
+              조용규 <span className="text-gold">목사</span>
             </h1>
             <p className="text-cream-dark text-lg mb-8">
               나함여행사 대표 · 성지순례 전문 인솔자
@@ -230,7 +229,7 @@ export default function AboutPage() {
                 {/* Signature */}
                 <div className="mt-10 pt-6 border-t border-gold/20">
                   <p className="text-gold font-serif text-lg">나함여행사 대표</p>
-                  <p className="text-cream font-serif text-xl font-bold mt-1">OOO 목사</p>
+                  <p className="text-cream font-serif text-xl font-bold mt-1">조용규 목사</p>
                 </div>
               </blockquote>
             </div>
