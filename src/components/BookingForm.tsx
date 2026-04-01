@@ -30,14 +30,13 @@ export default function BookingForm({ product, onBack }: BookingFormProps) {
     setSubmitted(true);
   };
 
-
   if (submitted) {
     return (
       <section id="products" className="py-24 bg-brown-dark">
         <div className="max-w-xl mx-auto px-4 text-center">
-          <div className="bg-brown-medium rounded-lg p-10 border border-gold/20">
-            <div className="text-5xl mb-6">🕊</div>
-            <h2 className="font-serif text-3xl text-gold mb-4">순례 신청이 완료되었습니다</h2>
+          <div className="bg-brown-medium rounded-lg p-6 sm:p-10 border border-gold/20">
+            <div className="text-4xl sm:text-5xl mb-4 sm:mb-6">🕊</div>
+            <h2 className="font-serif text-2xl sm:text-3xl text-gold mb-3 sm:mb-4">순례 신청이 완료되었습니다</h2>
             <p className="text-cream-dark leading-relaxed mb-6">
               소중한 신앙 여정에 함께하게 되어 감사합니다.<br />
               담당자가 영업일 기준 1~2일 이내에 연락드리겠습니다.
@@ -74,7 +73,7 @@ export default function BookingForm({ product, onBack }: BookingFormProps) {
           <span className="text-sm">상품 상세로 돌아가기</span>
         </button>
 
-        <h2 className="font-serif text-3xl text-cream mb-2">순례 신청</h2>
+        <h2 className="font-serif text-2xl sm:text-3xl text-cream mb-2">순례 신청</h2>
         <p className="text-cream-dark mb-8">
           <span className="text-gold">{product.name}</span> · {product.duration}
         </p>

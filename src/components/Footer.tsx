@@ -40,8 +40,8 @@ export default function Footer() {
         <div className="border-t border-gold/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-cream-dark/50 text-xs">
             <div className="text-center md:text-left">
-              <p>사업자등록번호: 123-45-67890 | 관광사업등록번호: 제2005-000123호</p>
-              <p className="mt-1">대표: 나함 | 대구광역시 남구 신촌길 101 2층</p>
+              <p>사업자등록번호: 123-45-67890<br className="sm:hidden" /><span className="hidden sm:inline"> | </span>관광사업등록번호: 제2005-000123호</p>
+              <p className="mt-1">대표: 나함<br className="sm:hidden" /><span className="hidden sm:inline"> | </span>대구광역시 남구 신촌길 101 2층</p>
             </div>
             <p>&copy; {new Date().getFullYear()} 나함여행사. All rights reserved.</p>
           </div>

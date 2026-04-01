@@ -45,24 +45,24 @@ export default function Hero() {
           }`}
         >
           {/* Subtitle */}
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="w-12 h-px bg-gold/60" />
-            <span className="text-gold text-sm tracking-[0.3em] uppercase font-medium">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+            <span className="w-8 sm:w-12 h-px bg-gold/60" />
+            <span className="text-gold text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase font-medium">
               개신교 성지순례 전문
             </span>
-            <span className="w-12 h-px bg-gold/60" />
+            <span className="w-8 sm:w-12 h-px bg-gold/60" />
           </div>
 
           {/* Main Copy */}
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-cream leading-tight mb-8 font-bold">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-cream leading-tight mb-6 sm:mb-8 font-bold">
             말씀이 살아 숨쉬는
             <br />
             <span className="text-gold">그 땅</span>을 함께 걷겠습니다
           </h1>
 
           {/* Bible Verse */}
-          <blockquote className="mb-8">
-            <p className="font-serif italic text-cream-dark text-lg sm:text-xl leading-relaxed mb-2">
+          <blockquote className="mb-6 sm:mb-8">
+            <p className="font-serif italic text-cream-dark text-base sm:text-xl leading-relaxed mb-2">
               &ldquo;내가 너와 함께 하여 네가 어디로 가든지 너를 지키며&rdquo;
             </p>
             <cite className="text-gold/80 text-sm not-italic tracking-wide">
@@ -71,23 +71,23 @@ export default function Hero() {
           </blockquote>
 
           {/* Description */}
-          <p className="text-cream-dark/90 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-cream-dark/90 text-sm sm:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2">
             나함여행사는 지난 20여 년간 성도님들의 소중한 신앙 여정을 동행해 왔습니다.
             예수님의 발자취를 따라, 사도 바울의 선교 길을 걸으며,
             성경 속 은혜의 현장으로 여러분을 안내합니다.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
             <button
               onClick={() => scrollTo('products')}
-              className="bg-gold hover:bg-gold-light text-brown-dark px-8 py-4 rounded-sm text-base font-semibold transition-all hover:shadow-lg hover:shadow-gold/20 w-full sm:w-auto cursor-pointer"
+              className="bg-gold hover:bg-gold-light text-brown-dark px-6 sm:px-8 py-3 sm:py-4 rounded-sm text-sm sm:text-base font-semibold transition-all hover:shadow-lg hover:shadow-gold/20 w-full sm:w-auto cursor-pointer"
             >
               순례 일정 보기
             </button>
             <button
               onClick={() => scrollTo('contact')}
-              className="border border-cream/30 hover:border-gold text-cream hover:text-gold px-8 py-4 rounded-sm text-base font-medium transition-all w-full sm:w-auto cursor-pointer"
+              className="border border-cream/30 hover:border-gold text-cream hover:text-gold px-6 sm:px-8 py-3 sm:py-4 rounded-sm text-sm sm:text-base font-medium transition-all w-full sm:w-auto cursor-pointer"
             >
               교회 단체 상담
             </button>

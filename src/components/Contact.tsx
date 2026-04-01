@@ -41,12 +41,12 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" ref={ref} className="py-24 bg-brown-dark">
+    <section id="contact" ref={ref} className="py-16 sm:py-24 bg-brown-dark">
       <div className="max-w-5xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="text-gold text-sm tracking-[0.2em] uppercase">Contact Us</span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-cream mt-3 mb-4 font-bold">
+          <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl text-cream mt-3 mb-4 font-bold">
             함께 걸을 여정을 준비합니다
           </h2>
           <p className="text-cream-dark/80 max-w-xl mx-auto leading-relaxed">
@@ -56,7 +56,7 @@ export default function Contact() {
         </div>
 
         <div
-          className={`grid grid-cols-1 lg:grid-cols-5 gap-12 transition-all duration-700 ${
+          className={`grid grid-cols-1 lg:grid-cols-5 gap-8 sm:gap-12 transition-all duration-700 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >

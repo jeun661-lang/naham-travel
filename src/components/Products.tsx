@@ -37,22 +37,22 @@ export default function Products() {
   }
 
   return (
-    <section id="products" ref={ref} className="py-24 bg-brown-dark">
+    <section id="products" ref={ref} className="py-16 sm:py-24 bg-brown-dark">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="text-gold text-sm tracking-[0.2em] uppercase">Holy Land Pilgrimage</span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-cream mt-3 mb-4 font-bold">
+        <div className="text-center mb-10 sm:mb-16">
+          <span className="text-gold text-xs sm:text-sm tracking-[0.2em] uppercase">Holy Land Pilgrimage</span>
+          <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl text-cream mt-3 mb-3 sm:mb-4 font-bold">
             은혜의 발자취를 따라
           </h2>
-          <p className="text-cream-dark/80 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-cream-dark/80 max-w-2xl mx-auto leading-relaxed text-sm sm:text-base">
             예수님과 사도들의 발자취가 남아 있는 성경의 현장에서,
             말씀이 눈앞에 펼쳐지는 감동을 경험하세요
           </p>
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-8 sm:mb-12">
           {filters.map((f) => (
             <button
               key={f}

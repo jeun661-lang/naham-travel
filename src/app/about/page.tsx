@@ -84,30 +84,30 @@ export default function AboutPage() {
       <Navigation />
       <main className="pt-20">
         {/* Profile Section */}
-        <section className="py-24 bg-brown-dark">
+        <section className="py-16 sm:py-24 bg-brown-dark">
           <div
             className={`max-w-4xl mx-auto px-4 text-center transition-all duration-1000 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
             {/* Profile Photo Placeholder */}
-            <div className="mx-auto w-48 h-48 rounded-full border-4 border-gold shadow-lg shadow-gold/20 flex items-center justify-center mb-8 overflow-hidden"
+            <div className="mx-auto w-36 h-36 sm:w-48 sm:h-48 rounded-full border-4 border-gold shadow-lg shadow-gold/20 flex items-center justify-center mb-6 sm:mb-8 overflow-hidden"
               style={{ background: 'linear-gradient(135deg, #c9a44a, #a8873a)' }}
             >
-              <span className="text-brown-dark text-6xl">✝</span>
+              <span className="text-brown-dark text-5xl sm:text-6xl">✝</span>
             </div>
 
             {/* Name */}
-            <h1 className="font-serif text-4xl sm:text-5xl text-cream font-bold mb-3">
+            <h1 className="font-serif text-3xl sm:text-5xl text-cream font-bold mb-2 sm:mb-3">
               조용규 <span className="text-gold">목사</span>
             </h1>
-            <p className="text-cream-dark text-lg mb-8">
+            <p className="text-cream-dark text-base sm:text-lg mb-6 sm:mb-8">
               나함여행사 대표 · 성지순례 전문 인솔자
             </p>
 
             {/* Bible Verse */}
-            <blockquote className="max-w-xl mx-auto border-l-4 border-gold pl-6 text-left">
-              <p className="font-serif italic text-cream text-lg leading-relaxed">
+            <blockquote className="max-w-xl mx-auto border-l-4 border-gold pl-4 sm:pl-6 text-left">
+              <p className="font-serif italic text-cream text-base sm:text-lg leading-relaxed">
                 &ldquo;내가 선한 목자라 선한 목자는 양들을 위하여 목숨을 버리거니와&rdquo;
               </p>
               <cite className="text-gold/80 text-sm not-italic mt-2 block">— 요한복음 10:11</cite>
@@ -116,9 +116,9 @@ export default function AboutPage() {
         </section>
 
         {/* Timeline Section */}
-        <section className="py-24 bg-brown-medium">
+        <section className="py-16 sm:py-24 bg-brown-medium">
           <div className="max-w-3xl mx-auto px-4">
-            <div className="text-center mb-16">
+            <div className="text-center mb-10 sm:mb-16">
               <span className="text-gold text-sm tracking-[0.2em] uppercase">Journey of Ministry</span>
               <h2 className="font-serif text-3xl sm:text-4xl text-cream mt-3 mb-4 font-bold">
                 사역의 여정
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 {timeline.map((item, index) => (
                   <div
                     key={index}
-                    className={`relative flex items-start gap-8 transition-all duration-700 ${
+                    className={`relative flex items-start gap-4 sm:gap-8 transition-all duration-700 ${
                       isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
                     }`}
                     style={{ transitionDelay: `${index * 150 + 300}ms` }}
@@ -170,7 +170,7 @@ export default function AboutPage() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
               {stats.map((stat, index) => (
                 <div
                   key={index}
@@ -179,7 +179,7 @@ export default function AboutPage() {
                   }`}
                   style={{ transitionDelay: `${index * 150}ms` }}
                 >
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gold font-serif mb-2">
+                  <div className="text-4xl sm:text-4xl md:text-5xl font-bold text-gold font-serif mb-2">
                     <CountUp target={stat.number} started={statsStarted} />
                     <span className="text-2xl sm:text-3xl">{stat.suffix}</span>
                   </div>
@@ -200,9 +200,9 @@ export default function AboutPage() {
               </h2>
             </div>
 
-            <div className="bg-brown-dark/50 rounded-lg p-8 sm:p-12 border border-gold/15">
-              <blockquote className="border-l-4 border-gold pl-6 sm:pl-8">
-                <div className="font-serif text-cream/90 text-base sm:text-lg leading-[2] space-y-6">
+            <div className="bg-brown-dark/50 rounded-lg p-5 sm:p-12 border border-gold/15">
+              <blockquote className="border-l-4 border-gold pl-4 sm:pl-8">
+                <div className="font-serif text-cream/90 text-sm sm:text-lg leading-[1.8] sm:leading-[2] space-y-4 sm:space-y-6">
                   <p>사랑하는 성도님들께,</p>
 
                   <p>
@@ -226,9 +226,9 @@ export default function AboutPage() {
                 </div>
 
                 {/* Signature */}
-                <div className="mt-10 pt-6 border-t border-gold/20">
-                  <p className="text-gold font-serif text-lg">나함여행사 대표</p>
-                  <p className="text-cream font-serif text-xl font-bold mt-1">조용규 목사</p>
+                <div className="mt-6 sm:mt-10 pt-4 sm:pt-6 border-t border-gold/20">
+                  <p className="text-gold font-serif text-base sm:text-lg">나함여행사 대표</p>
+                  <p className="text-cream font-serif text-lg sm:text-xl font-bold mt-1">조용규 목사</p>
                 </div>
               </blockquote>
             </div>

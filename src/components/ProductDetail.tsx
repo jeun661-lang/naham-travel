@@ -35,12 +35,12 @@ export default function ProductDetail({ product, onBack }: ProductDetailProps) {
   }
 
   return (
-    <section id="products" className="py-24 bg-brown-dark">
+    <section id="products" className="py-16 sm:py-24 bg-brown-dark">
       <div className="max-w-5xl mx-auto px-4">
         {/* Back Button */}
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-cream-dark hover:text-gold transition-colors mb-8 cursor-pointer"
+          className="flex items-center gap-2 text-cream-dark hover:text-gold transition-colors mb-6 sm:mb-8 cursor-pointer"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path d="M12 4L6 10L12 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -76,13 +76,13 @@ export default function ProductDetail({ product, onBack }: ProductDetailProps) {
             </span>
           )}
 
-          <div className="absolute bottom-6 left-6 right-6">
-            <div className="flex items-center gap-2 text-sm text-cream-dark mb-2">
+          <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6">
+            <div className="flex items-center gap-2 text-xs sm:text-sm text-cream-dark mb-1 sm:mb-2">
               <span>{product.region}</span>
               <span className="text-gold/40">|</span>
               <span>{product.duration}</span>
             </div>
-            <h1 className="font-serif text-3xl sm:text-4xl text-cream font-bold">{product.name}</h1>
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl text-cream font-bold">{product.name}</h1>
           </div>
         </div>
 
@@ -90,8 +90,8 @@ export default function ProductDetail({ product, onBack }: ProductDetailProps) {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
             {/* Bible Verse Block */}
-            <blockquote className="border-l-4 border-gold pl-6 py-4 bg-brown-medium/50 rounded-r-lg">
-              <p className="font-serif italic text-cream text-lg leading-relaxed">
+            <blockquote className="border-l-4 border-gold pl-4 sm:pl-6 py-3 sm:py-4 bg-brown-medium/50 rounded-r-lg">
+              <p className="font-serif italic text-cream text-base sm:text-lg leading-relaxed">
                 &ldquo;{product.verse}&rdquo;
               </p>
               <cite className="text-gold/80 text-sm not-italic mt-2 block">— {product.verseSource}</cite>
