@@ -169,7 +169,7 @@ export default function ProductDetail({ product, onBack }: ProductDetailProps) {
 
               <p className="text-cream-dark/50 text-xs text-center leading-relaxed">
                 순례 문의 및 상담<br />
-                ☎ 02-1234-5678
+                ☎ 010-2355-9595
               </p>
             </div>
           </div>

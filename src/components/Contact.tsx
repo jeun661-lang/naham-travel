@@ -161,21 +161,14 @@ export default function Contact() {
                   <span className="text-gold mt-0.5">☎</span>
                   <div>
                     <span className="text-cream text-sm block font-medium">전화 상담</span>
-                    <span className="text-cream-dark text-sm">02-1234-5678</span>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-gold mt-0.5">💬</span>
-                  <div>
-                    <span className="text-cream text-sm block font-medium">카카오톡 채널</span>
-                    <span className="text-cream-dark text-sm">@나함여행사</span>
+                    <span className="text-cream-dark text-sm">010-2355-9595</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-gold mt-0.5">✉</span>
                   <div>
                     <span className="text-cream text-sm block font-medium">이메일</span>
-                    <span className="text-cream-dark text-sm">info@nahamtravel.com</span>
+                    <span className="text-cream-dark text-sm">naham0928@naver.com</span>
                   </div>
                 </div>
               </div>
@@ -186,15 +179,7 @@ export default function Contact() {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-cream-dark">평일</span>
-                  <span className="text-cream">09:00 - 18:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-cream-dark">토요일</span>
-                  <span className="text-cream">10:00 - 15:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-cream-dark">주일 / 공휴일</span>
-                  <span className="text-gold/80">휴무</span>
+                  <span className="text-cream">09:00 - 21:00</span>
                 </div>
               </div>
             </div>
@@ -202,8 +187,8 @@ export default function Contact() {
             <div className="bg-brown-medium rounded-lg p-6 border border-gold/10">
               <h3 className="text-gold font-serif text-lg mb-3">찾아오시는 길</h3>
               <p className="text-cream-dark text-sm leading-relaxed">
-                서울특별시 종로구 종로 1길 50<br />
-                나함빌딩 3층
+                대구광역시 남구 신촌길 101<br />
+                2층
               </p>
             </div>
           </div>
